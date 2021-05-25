@@ -124,7 +124,7 @@ a:active {
 .main {
   transition: all .5s;
   padding-left: 3em;
-  height: 100em;
+  height: fit-content;
   background: #1f2933;
 }
 .time-display {
@@ -193,7 +193,10 @@ input[type=button]:hover {
 }
 
 
-
+.div {
+  width: 100%;
+  height: 100%;
+}
 .coupons {
   display: flex;
   align-content: flex-start;
@@ -203,8 +206,17 @@ input[type=button]:hover {
   width: inherit;
   height: fit-content;
 }
-.item {
-  width: 30%;
+.links-div {
+  display: flex;
+  align-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: inherit;
+  height: fit-content;
+}
+.item-timer {
+  width: 75%;
   height: 25em;
   max-width: 600px;
   margin-left: auto;
@@ -213,14 +225,40 @@ input[type=button]:hover {
   background: linear-gradient(145deg, #212c37, #1c252e);
   box-shadow:  34px 34px 69px #171e259d,
              -34px -34px 69px #273441a6;
+  margin-bottom: 2em;
 }
-.item:hover {
-  transition: all 0.3s;
-  width: 30%;
+.item {
+  width: 75%;
   height: 25em;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 2px 18px;
+  background: linear-gradient(145deg, #212c37, #1c252e);
+  box-shadow:  34px 34px 69px #171e259d,
+             -34px -34px 69px #273441a6;
+  margin-bottom: 2em;
+}
+.item:hover {
+  transition: all 0.3s;
+  height: 25em;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.separator .rounded 
+{
+    float: none;
+    border: 8px solid #323f48;
+    border-radius: 5px;
+}
+.separator-center .rounded 
+{
+    float: none;
+    margin-left: 15%;
+    margin-right: 15%;
+    border: 8px solid #323f48;
+    border-radius: 5px;
 }
 
 .wide {
@@ -262,6 +300,51 @@ input[type=button]:hover {
   border-radius: 1em;
   width: 18em;
   padding-right: 1em;
+}
+
+
+/* Tooltip text */
+/* Tooltip container */
+.container-coupon {
+  position: relative;
+  display: inline-block;
+}
+.container-coupon .tooltiptext {
+  visibility: hidden;
+  width: fit-content;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 00%;
+  left: 150%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: all 0.3s;
+}
+/* Tooltip arrow */
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 00%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.container-coupon:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 

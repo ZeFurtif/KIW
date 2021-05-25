@@ -12,7 +12,7 @@
             <a href="#kiw"><h1>KIW'
             </h1></a>
             <a href="#timer">Timer</a>
-            <a href="">Links</a>
+            <a href="#links">Links</a>
             <a href="">Todos</a>
             <a href="">Settings</a>
         </div>
@@ -29,35 +29,48 @@
             </div>
             <br>
             <br>
-            <div class="coupons">
-                <div class="item">
-                    <br>
-                    <div class="timer-display" id="timer">
+            <div class="div timer-div" id="timer">
+                <div class="coupons">
+                    <div class="item-timer">
                         <br>
-                        <div class="container-coupon">
-                            <h1> Timer </h1>
+                        <div class="timer-display">
+                            <br>
+                            <div class="container-coupon">
+                                <h1> Timer </h1>
+                            <span class="tooltiptext">Attention le son d'alerte est fort.</span>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="inputbar">
+                                <input type="time" id="userTime" placeholder="Time input"/>
+                                <input type="button" value="&#9094;" onclick="startTimer()" /><br> <br>
+                            </div>
                         </div>
-                        <br>
-                        <br>
-                        <div class="inputbar">
-                            <input type="time" id="userTime" placeholder="Time input"/>
-                            <input type="button" value="&#9094;" onclick="startTimer()" /><br> <br>
+                        <div class="countdown">
+                            <br>
+                            <div id="countdown">00:00</div>
+                            <br>
                         </div>
-                    </div>
-                    <div class="countdown">
-                        <br>
-                        <div id="countdown">00:00</div>
-                        <br>
-                    </div>
-                    <div class="timer-display">
-                        <div id="snackbar">Time's up !</div>
+                        <div class="timer-display">
+                            <div id="snackbar">Time's up !</div>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <br> <br>
+            <div class="separator-center">
+                <hr class="rounded">
+            </div>
+            <br> <br> <br>
+            <div class="div links-div" id="links">
                 <div class="item">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KuNUt43BVK0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5qap5aO4i9A?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
                 </div>
                 <div class="item">
-                    <iframe src="https://discord.com/widget?id=421733565315940362&amp;theme=dark" width="100%" height="100%" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/q76bMs-NwRk?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+                </div>
+                <div class="item">
+                    <iframe id="tradingview_85bbe" src="https://s.tradingview.com/widgetembed/?frameElementId=tradingview_85bbe&amp;symbol=DGBUSDT&amp;interval=D&amp;hidesidetoolbar=0&amp;symboledit=1&amp;saveimage=1&amp;toolbarbg=F1F3F6&amp;studies=%5B%5D&amp;hideideas=1&amp;theme=Light&amp;style=1&amp;timezone=Etc%2FUTC&amp;studies_overrides=%7B%7D&amp;overrides=%7B%7D&amp;enabled_features=%5B%5D&amp;disabled_features=%5B%5D&amp;locale=en&amp;utm_source=coinmarketcap.com&amp;utm_medium=widget&amp;utm_campaign=chart&amp;utm_term=DGBUSDT" style="width: 100%; height: 100%; margin: 0 !important; padding: 0 !important;" frameborder="0" allowtransparency="true" scrolling="no" allowfullscreen=""></iframe>
                 </div>
             </div>
         </div>
